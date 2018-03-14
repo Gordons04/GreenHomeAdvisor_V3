@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">GreenHomeAdvisor_V2</string>
-    <string name="title_activity_menu_green_home_advisor">menu_green_home_advisor</string>
+    <string name="title_activity_menu_green_home_advisor">Menu</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
