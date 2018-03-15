@@ -12,7 +12,7 @@
         <item
             android:id="@+id/nav_charts"
             android:icon="@drawable/charts"
-            android:title="Slideshow" />
+            android:title="Energy Consumption" />
         <item
             android:id="@+id/nav_bills"
             android:icon="@drawable/bill"
