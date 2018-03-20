@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "552676162859",
+    "firebase_url": "https://greenhomeadvisor-cg96.firebaseio.com",
+    "project_id": "greenhomeadvisor-cg96",
+    "storage_bucket": "greenhomeadvisor-cg96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552676162859:android:7e6e2ebb5297bf8f",
+        "android_client_info": {
+          "package_name": "com.example.gordo.greenhomeadvisor_v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552676162859-v1t7fd3qfd07dfffpsisnd0m30h4k15o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gordo.greenhomeadvisor_v2",
+            "certificate_hash": "ba4a64fb7c3f9eca02e35a9aec15e7c98a8a1145"
+          }
+        },
+        {
+          "client_id": "552676162859-1m1qnhv7uv88ldrjru8b2tla5vqu25m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB70Rbeovt7TuU4yKrqW4cwtiqfhZclx_k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552676162859-1m1qnhv7uv88ldrjru8b2tla5vqu25m7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
