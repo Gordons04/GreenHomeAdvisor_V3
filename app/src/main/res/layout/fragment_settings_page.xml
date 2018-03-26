@@ -4,9 +4,16 @@
     android:layout_height="match_parent"
     tools:context="com.example.gordo.greenhomeadvisor_v2.SettingsPage">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Settings Fragment" />
+     <LinearLayout
+         android:id="@+id/SettingsContainer"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
 
+          <Button
+              android:id="@+id/editProfile"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Edit Profile" />
+     </LinearLayout>
 </FrameLayout>
