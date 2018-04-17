@@ -4,9 +4,98 @@
     android:layout_height="match_parent"
     tools:context="com.example.gordo.greenhomeadvisor_v2.ChartPage">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Charts Fragment" />
+        android:orientation="vertical">
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/eGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:visibility="visible" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/tGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:visibility="gone" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/hGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dayChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Day" />
+
+            <Button
+                android:id="@+id/weekChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Week" />
+
+            <Button
+                android:id="@+id/monthChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Month"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/yearChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Year" />
+
+            <Button
+                android:id="@+id/maxChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Max" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/eChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Electricity" />
+
+            <Button
+                android:id="@+id/tChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Temperature" />
+
+            <Button
+                android:id="@+id/hChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Humidity" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>

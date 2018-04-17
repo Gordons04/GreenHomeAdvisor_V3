@@ -10,10 +10,66 @@
          android:layout_height="match_parent"
          android:orientation="vertical">
 
+          <TextView
+              android:id="@+id/textView3"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Prefered Unit of Measurement:"
+              android:textColor="@android:color/black"
+              android:textSize="16sp" />
+
+          <Switch
+              android:id="@+id/unitSwitch"
+              android:layout_width="match_parent"
+              android:layout_height="43dp"
+              android:checked="false"
+              android:splitTrack="false"
+              android:textAlignment="viewStart"
+              android:textColor="@android:color/black"
+              android:textSize="16sp"
+              tools:checked="false" />
+
+          <TextView
+              android:id="@+id/priceLabel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Price per kWh:"
+              android:textColor="@android:color/black"
+              android:textSize="16sp" />
+
+          <EditText
+              android:id="@+id/priceInput"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:inputType="numberDecimal"
+              android:textColor="@android:color/black"
+              android:textSize="16sp" />
+
+          <Button
+              android:id="@+id/saveButton"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/GHA_lightGreen"
+              android:text="Save Settings" />
+
           <Button
               android:id="@+id/editProfile"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:text="Edit Profile" />
+
+          <Button
+              android:id="@+id/resetPassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Reset Password" />
+
+          <ProgressBar
+              android:id="@+id/progress"
+              style="?android:attr/progressBarStyle"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:visibility="gone" />
      </LinearLayout>
 </FrameLayout>

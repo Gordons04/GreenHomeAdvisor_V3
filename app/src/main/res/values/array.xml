@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="chartType">
+        <item>Electricity</item>
+        <item>Temperature</item>
+        <item>Humidity</item>
+    </string-array>
+
+</resources>

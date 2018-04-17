@@ -4,9 +4,46 @@
     android:layout_height="match_parent"
     tools:context="com.example.gordo.greenhomeadvisor_v2.BillPage">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Bill Prediction Fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aprils Current Bill:"
+                android:textAlignment="center"
+                android:textColor="@color/GHA_darkGreen"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/currentBill"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical"
+                android:text="BILL AMOUNT"
+                android:textAlignment="center"
+                android:textColor="@color/GHA_darkGreen"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:background="#FFFFFF"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/billChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

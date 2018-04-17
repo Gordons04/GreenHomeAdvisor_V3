@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">GreenHomeAdvisor_V2</string>
+
+    <string name="app_name">Green Home Advisor</string>
     <string name="title_activity_menu_green_home_advisor">Menu</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -8,4 +9,14 @@
     <string name="action_settings">Settings</string>
 
     <string name="hello_blank_fragment">Blank Fragment</string>
+
+    <string name="menu_email_verification">Email not verified? Profile not setup? Click Here</string>
+
+    <string name="ProfilePictureInstructions">Click Below to Upload a Profile Picture</string>
+
+    <string name="CurrentPassInstructions">Please Enter Your Current Password</string>
+    <string name="NewPassInstructions">Please Enter and Confirm Your New Password</string>
+
+    <string name="ForgotPassword">Forgot Your Password? Click Here</string>
+
 </resources>
