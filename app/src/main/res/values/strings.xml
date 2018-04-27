@@ -18,5 +18,18 @@
     <string name="NewPassInstructions">Please Enter and Confirm Your New Password</string>
 
     <string name="ForgotPassword">Forgot Your Password? Click Here</string>
+    <string name="blog_post_title">Post Title</string>
+    <string name="post_content_hint">Post Content</string>
+    <string name="post_submit_btn">Submit Post</string>
+    <string name="blog_pic_ins">Click To Upload Image</string>
+    <string name="new_post_btn">Write New Post</string>
+    <string name="new_blog_post">New Post</string>
+    <string name="e_snapshot">April\'s Consumption</string>
+    <string name="settings_units_text">Prefered Unit of Measurement:</string>
+    <string name="settings_price_kWh">Price per kWh:</string>
+    <string name="menu_edit_profile">Edit User</string>
+    <string name="profile_garden_title">My Posts:</string>
+    <string name="garden_title">Welcome To The Garden!</string>
+    <string name="garden_new_post_btn">Write New Post</string>
 
 </resources>

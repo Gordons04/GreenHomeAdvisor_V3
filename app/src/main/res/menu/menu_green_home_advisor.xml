@@ -2,4 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <item
+        android:id="@+id/new_blog_post"
+        android:checkable="false"
+        android:icon="@drawable/newmessage"
+        android:title="@string/new_blog_post"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/menu_edit_profile"
+        android:checkable="false"
+        android:icon="@drawable/settings"
+        android:title="@string/menu_edit_profile" />
+
 </menu>

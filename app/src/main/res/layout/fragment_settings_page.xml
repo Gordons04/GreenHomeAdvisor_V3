@@ -8,13 +8,15 @@
          android:id="@+id/SettingsContainer"
          android:layout_width="match_parent"
          android:layout_height="match_parent"
-         android:orientation="vertical">
+         android:gravity="center_vertical"
+         android:orientation="vertical"
+         android:layout_margin="8dp">
 
           <TextView
               android:id="@+id/textView3"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="Prefered Unit of Measurement:"
+              android:text="@string/settings_units_text"
               android:textColor="@android:color/black"
               android:textSize="16sp" />
 
@@ -33,7 +35,7 @@
               android:id="@+id/priceLabel"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:text="Price per kWh:"
+              android:text="@string/settings_price_kWh"
               android:textColor="@android:color/black"
               android:textSize="16sp" />
 

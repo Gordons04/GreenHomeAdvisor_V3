@@ -7,60 +7,214 @@
     tools:context="com.example.gordo.greenhomeadvisor_v2.Home">
 
 
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gradient">
 
-        <TextView
-            android:id="@+id/editProfileText"
-            android:layout_width="365dp"
-            android:layout_height="25dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/menu_email_verification"
-            android:textAlignment="center"
-            android:textColor="#3a8717"
-            android:textStyle="bold"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.476"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.465" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
 
-        <ImageView
-            android:id="@+id/menu_logo"
-            android:layout_width="181dp"
-            android:layout_height="180dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
-            android:src="@drawable/logo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/menu_logo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/logo"
+                android:layout_centerInParent="true" />
 
-        <TextView
-            android:id="@+id/greeting"
-            android:layout_width="326dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="TextView"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.511"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.389" />
-    </android.support.constraint.ConstraintLayout>
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            >
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/menu_card_profile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp">
+
+                    <ImageView
+                        android:id="@+id/menu_profile_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/menuuser"
+                        android:layout_margin="3dp"/>
+
+                    <TextView
+                        android:id="@+id/menu_profile_greeting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Profile"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        android:layout_margin="3dp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/menu_card_electric_snapshot"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/e_snapshot"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                    android:layout_margin="3dp"/>
+
+                    <TextView
+                        android:id="@+id/menu_currentkWh_reading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100 kWh"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/menu_card_home_snapshot"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp">
+
+                    <TextView
+                        android:id="@+id/menu_home_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home Snapshot"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        android:layout_margin="3dp"/>
+
+                    <TextView
+                        android:id="@+id/menu_home_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp" />
+
+                    <TextView
+                        android:id="@+id/menu_home_humidity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_margin="3dp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/menu_card_garden"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp">
+
+                    <ImageView
+                        android:id="@+id/menu_garden_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:scaleType="fitCenter"
+                        android:layout_margin="3dp"
+                        android:src="@drawable/idea"/>
+
+                    <TextView
+                        android:id="@+id/menu_garden_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Community Tips"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        android:layout_margin="3dp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
 </FrameLayout>

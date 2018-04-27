@@ -14,6 +14,10 @@
             android:icon="@drawable/user"
             android:title="Profile" />
         <item
+            android:id="@+id/nav_garden"
+            android:icon="@drawable/plant"
+            android:title="Garden" />
+        <item
             android:id="@+id/nav_charts"
             android:icon="@drawable/charts"
             android:title="Energy Consumption" />
